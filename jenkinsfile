@@ -1,10 +1,11 @@
 pipeline{
   agent {
       label 'slave1'
+      }
   stages{
     stage('version-control'){
       steps{
-        sh 'free -g'pipel
+        sh 'free -g'
       }
     }
     stage('parallel-job'){
